@@ -1,0 +1,48 @@
+
+
+alias cdt='cd /usr/local/tomcat/'
+
+
+
+
+
+
+#!/bin/bash
+
+test1="hello world"
+echo $test1
+
+file -i test1
+
+
+
+######anacron削除
+yum remove cronie-anacron
+########従来のクローン導入
+yum install cronie-nonanacron
+
+chkconfig --list | grep crond
+
+service crond start
+
+ps -e | grep crond
+
+
+########cronスケジューラー
+crontab -e    var/spool/cronがオープンされる
+crontab -i
+crontab -r
+
+分　時　日　月　曜日　コマンド
+
+5 0 * * * test1.sh >> /var/tmp/out.txt
+
+#######実行軒付与
+chmod +x test1.sh
+
+########cronスケジューラー設定
+crontab -e
+
+tail -f /var/log/cron_messages
+に出力される
+/var/log/messages に出力される
