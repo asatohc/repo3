@@ -9,7 +9,7 @@ group by t.“X•ÜƒR[ƒh, t.“X•Ü–¼
 
 
 
-
+sum(fffff)
 sum(aabcc)
 sum(k.goukeikingaku),
 count(k.kaikei_id),
