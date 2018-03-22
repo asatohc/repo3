@@ -10,7 +10,7 @@ group by t.“X•ÜƒR[ƒh, t.“X•Ü–¼
 
 
 
-
+sum(aabcc)
 sum(k.goukeikingaku),
 count(k.kaikei_id),
 avg(k.goukeikingaku)
